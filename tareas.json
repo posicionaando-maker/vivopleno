@@ -1,0 +1,88 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "categoria": "mindfulness",
+      "texto": "Observa tu respiración durante 5 minutos, sin cambiarla",
+      "duracionMinutos": 5,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 2,
+      "categoria": "gratitud",
+      "texto": "Escribe una carta breve a alguien que te ayudó sin saberlo",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio"
+    },
+    {
+      "id": 3,
+      "categoria": "bondad",
+      "texto": "Haz un pequeño favor anónimo (dejar una nota amable, ordenar algo)",
+      "duracionMinutos": 5,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 4,
+      "categoria": "crecimiento",
+      "texto": "Identifica una creencia limitante y cámbiala por una empoderante",
+      "duracionMinutos": 8,
+      "dificultad": "avanzado"
+    },
+    {
+      "id": 5,
+      "categoria": "conexion",
+      "texto": "Llama o escribe a un ser querido solo para preguntar cómo está",
+      "duracionMinutos": 7,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 6,
+      "categoria": "autocuidado",
+      "texto": "Estira el cuello y la espalda durante 3 minutos",
+      "duracionMinutos": 3,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 7,
+      "categoria": "proposito",
+      "texto": "Escribe una frase de tu 'por qué' (¿para qué haces lo que haces?)",
+      "duracionMinutos": 4,
+      "dificultad": "intermedio"
+    },
+    {
+      "id": 8,
+      "categoria": "aceptacion",
+      "texto": "Identifica algo que no puedes cambiar y practica aceptarlo sin juicio",
+      "duracionMinutos": 6,
+      "dificultad": "avanzado"
+    },
+    {
+      "id": 9,
+      "categoria": "flow",
+      "texto": "Dedica 15 minutos a una actividad que te absorba por completo (leer, dibujar, tocar instrumento)",
+      "duracionMinutos": 15,
+      "dificultad": "intermedio"
+    },
+    {
+      "id": 10,
+      "categoria": "gratitud",
+      "texto": "Agradece en silencio a tu cuerpo por todo lo que hace por ti",
+      "duracionMinutos": 3,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 11,
+      "categoria": "mindfulness",
+      "texto": "Come una fruta con atención plena: observa colores, texturas, sabores",
+      "duracionMinutos": 6,
+      "dificultad": "inicial"
+    },
+    {
+      "id": 12,
+      "categoria": "conexion",
+      "texto": "Sonríe a un desconocido o saluda al vecino",
+      "duracionMinutos": 2,
+      "dificultad": "inicial"
+    }
+  ]
+}
