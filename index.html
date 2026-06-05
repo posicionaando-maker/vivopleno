@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FF6B35">
+    <meta name="description" content="Vivo Pleno - Cultiva una vida plena con consejos diarios y tareas basadas en psicología positiva">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <title>Vivo Pleno - Vida plena cada día</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Encabezado común -->
+        <header>
+            <div class="header-top">
+                <h1>🌿 VIVO PLENO</h1>
+                <button id="btnConfigHeader" class="icon-btn" aria-label="Configuración">⚙️</button>
+            </div>
+            <div class="fecha-badge" id="fechaActual"></div>
+        </header>
+
+        <!-- ==================== PANTALLA PRINCIPAL (Hoy) ==================== -->
+        <div id="mainScreen" class="screen active">
+            <!-- Tarjeta del consejo diario -->
+            <div class="card consejo-card">
+                <div class="card-header">
+                    <span class="emoji-icon">✨</span>
+                    <h3>Consejo del día</h3>
+                </div>
+                <div class="consejo-contenido" id="consejoDiario">
+                    <p class="consejo-texto">Cargando...</p>
+                    <p class="consejo-autor"></p>
+                </div>
+            </div>
+
+            <!-- Lista de tareas del día -->
+            <div class="card tareas-card">
+                <div class="card-header">
+                    <span class="emoji-icon">📋</span>
+                    <h3>Mis tareas hoy</h3>
+                    <button id="btnAgregarTareaPropia" class="btn-icon-small" title="Agregar tarea propia">+</button>
+                </div>
+                <div id="listaTareas" class="lista-tareas">
+                    <!-- Las tareas se cargarán dinámicamente -->
+                </div>
+                <div class="tareas-footer">
+                    <span id="contadorCompletadas">✅ Completadas: 0/0</span>
+                </div>
+            </div>
+
+            <!-- Estadísticas rápidas -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-emoji">🔥</span>
+                    <span class="stat-value" id="rachaActual">0</span>
+                    <span class="stat-label">días seguidos</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-emoji">🏆</span>
+                    <span class="stat-value" id="mejorRacha">0</span>
+                    <span class="stat-label">mejor racha</span>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <div class="nav-buttons">
+                <button id="btnVerProgreso" class="nav-btn">📈 Progreso</button>
+                <button id="btnVerLogros" class="nav-btn">🏆 Logros</button>
+                <button id="btnAjustes" class="nav-btn">⚙️ Ajustes</button>
+            </div>
+        </div>
+
+        <!-- ==================== PANTALLA DE PROGRESO ==================== -->
+        <div id="progresoScreen" class="screen">
+            <div class="screen-header">
+                <button id="btnBackProgreso" class="back-btn">← Volver</button>
+                <h2>📈 Mi progreso</h2>
+            </div>
+            
+            <!-- Selector de período -->
+            <div class="periodo-selector">
+                <button id="btnSemana" class="periodo-btn active">Esta semana</button>
+                <button id="btnMes" class="periodo-btn">Este mes</button>
+            </div>
+
+            <!-- Radar de pilares -->
+            <div class="card">
+                <h3>🧭 Pilares trabajados</h3>
+                <canvas id="radarCanvas" width="300" height="300" style="max-width:100%; height:auto;"></canvas>
+            </div>
+
+            <!-- Mapa de calor (solo para mes) -->
+            <div id="mapaCalorContainer" class="card" style="display:none;">
+                <h3>📅 Mapa de calor</h3>
+                <div id="mapaCalor" class="mapa-calor"></div>
+            </div>
+
+            <!-- Estadísticas de semana/mes -->
+            <div class="card">
+                <h3>📊 Resumen</h3>
+                <div id="resumenPeriodo">
+                    <p>Tareas completadas: <strong id="totalCompletadas">0</strong></p>
+                    <p>Días activos: <strong id="diasActivos">0</strong></p>
+                </div>
+            </div>
+
+            <button id="btnExportarDatos" class="btn-primary">📤 Exportar mis datos</button>
+        </div>
+
+        <!-- ==================== PANTALLA DE LOGROS ==================== -->
+        <div id="logrosScreen" class="screen">
+            <div class="screen-header">
+                <button id="btnBackLogros" class="back-btn">← Volver</button>
+                <h2>🏆 Logros destacados</h2>
+                <button id="btnNuevoLogro" class="icon-btn-small">+</button>
+            </div>
+            <div id="listaLogros" class="lista-logros">
+                <!-- Logros dinámicos -->
+            </div>
+        </div>
+
+        <!-- ==================== PANTALLA DE AJUSTES ==================== -->
+        <div id="ajustesScreen" class="screen">
+            <div class="screen-header">
+                <button id="btnBackAjustes" class="back-btn">← Volver</button>
+                <h2>⚙️ Ajustes</h2>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Tema visual</h3>
+                <div class="tema-buttons">
+                    <button id="btnTemaCalido" class="tema-btn active">🌅 Cálido (naranja/verde)</button>
+                    <button id="btnTemaFrio" class="tema-btn">❄️ Frío (azul/gris)</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Pilares prioritarios</h3>
+                <div id="pilaresChecklist" class="checklist-group">
+                    <!-- Se llena con JS -->
+                </div>
+                <button id="btnGuardarPilares" class="btn-small">Guardar preferencias</button>
+            </div>
+
+            <div class="card">
+                <h3>⏱️ Duración preferida de tareas</h3>
+                <select id="duracionPreferida" class="select-input">
+                    <option value="corta">Corta (< 5 min)</option>
+                    <option value="mixta" selected>Mixta (5-10 min)</option>
+                    <option value="profunda">Profunda (> 10 min)</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <h3>💾 Respaldo y sincronización</h3>
+                <button id="btnImportarDatos" class="btn-secondary">📂 Importar desde archivo</button>
+                <input type="file" id="importFileInput" accept=".json" style="display:none;">
+                <p class="config-note">Exporta tus datos para respaldarlos o moverlos a otro dispositivo.</p>
+            </div>
+
+            <div class="card">
+                <h3>🇨🇺 Recursos Cuba</h3>
+                <p class="help-text">
+                    📞 Línea MINSAP: <strong>7 838-0000</strong><br>
+                    🏥 Policlínico más cercano (consulta gratuita)<br>
+                    🧠 Centro Comunitario de Salud Mental (cada municipio)<br>
+                    🚨 Emergencias: 104
+                </p>
+                <p class="config-note">Esta app es un complemento, no un sustituto de ayuda profesional.</p>
+            </div>
+
+            <div class="card">
+                <h3>📖 Acerca de</h3>
+                <p class="about-text">
+                    Basado en:<br>
+                    • Psicología positiva (Seligman) - PERMA<br>
+                    • Logoterapia (Frankl)<br>
+                    • Terapia Cognitivo-Conductual (Beck)<br>
+                    • Mindfulness (Kabat-Zinn)<br>
+                    • Hábitos atómicos (Clear)<br>
+                    • Autocompasión (Neff)<br>
+                    • ACT (Aceptación y Compromiso)
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal para agregar/editar logro -->
+        <div id="logroModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <h3 id="modalLogroTitle">📝 Nuevo logro</h3>
+                <textarea id="logroTexto" rows="4" placeholder="Escribe tu reflexión, cita o aprendizaje..."></textarea>
+                <div class="modal-buttons">
+                    <button id="btnGuardarLogro" class="btn-primary">Guardar</button>
+                    <button id="btnCancelarLogro" class="btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
