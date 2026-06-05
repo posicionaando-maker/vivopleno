@@ -1,64 +1,484 @@
 {
-  "consejos": [
+  "tareas": [
     {
       "id": 1,
-      "pilar": "propósito",
-      "texto": "Define una intención para el día de hoy: ¿Qué pequeña acción te acerca a la persona que quieres ser?",
-      "autor": "Viktor Frankl"
+      "categoria": "mindfulness",
+      "texto": "Siéntate en silencio 5 minutos. Solo respira. Cuando la mente divague, vuelve a la respiración.",
+      "duracionMinutos": 5,
+      "dificultad": "inicial",
+      "intensidad": "suave"
     },
     {
       "id": 2,
-      "pilar": "conexión",
-      "texto": "Conecta genuinamente con alguien: pregúntale '¿cómo te sientes realmente?' y escucha sin juzgar.",
-      "autor": "Psicología positiva"
+      "categoria": "mindfulness",
+      "texto": "Come una fruta despacio. Obsérvala, huélela, siente su textura. Sin apuro.",
+      "duracionMinutos": 6,
+      "dificultad": "inicial",
+      "intensidad": "suave"
     },
     {
       "id": 3,
-      "pilar": "autocompasión",
-      "texto": "Cuando te equivoques hoy, di en voz alta: 'Está bien, soy humano, puedo aprender de esto'.",
-      "autor": "Kristin Neff"
+      "categoria": "mindfulness",
+      "texto": "Escucha 3 minutos de silencio absoluto (sin ruido de fondo). Nota lo que aparece.",
+      "duracionMinutos": 3,
+      "dificultad": "inicial",
+      "intensidad": "suave"
     },
     {
       "id": 4,
-      "pilar": "crecimiento",
-      "texto": "Aprende algo nuevo en 10 minutos: un dato curioso, una palabra en otro idioma o un acorde de guitarra.",
-      "autor": "Carol Dweck"
+      "categoria": "mindfulness",
+      "texto": "Camina 10 minutos sin teléfono. Siente el suelo bajo tus pies. Mira los colores a tu alrededor.",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
     },
     {
       "id": 5,
-      "pilar": "gratitud",
-      "texto": "Escribe tres cosas buenas que te hayan pasado hoy, por pequeñas que sean.",
-      "autor": "Martin Seligman"
+      "categoria": "mindfulness",
+      "texto": "Lava los platos o limpia algo con atención plena. Siente el agua, el movimiento.",
+      "duracionMinutos": 8,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
     },
     {
       "id": 6,
-      "pilar": "descanso",
-      "texto": "El descanso no es un lujo: tómate 30 minutos sin pantallas, solo para estar contigo mismo.",
-      "autor": "Medicina del sueño"
+      "categoria": "mindfulness",
+      "texto": "Meditación de escaneo corporal: recorre mentalmente cada parte de tu cuerpo desde pies a cabeza.",
+      "duracionMinutos": 12,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
     },
     {
       "id": 7,
-      "pilar": "reflexión",
-      "texto": "Revisa tu semana: ¿Qué funcionó? ¿Qué ajustarías? Planea una acción para mejorar.",
-      "autor": "James Clear"
+      "categoria": "gratitud",
+      "texto": "Escribe 3 cosas específicas por las que estás agradecido hoy. No generalices, detalla.",
+      "duracionMinutos": 4,
+      "dificultad": "inicial",
+      "intensidad": "suave"
     },
     {
       "id": 8,
-      "pilar": "mindfulness",
-      "texto": "Detente un momento. Observa tu respiración. No necesitas cambiarla, solo notarla.",
-      "autor": "Jon Kabat-Zinn"
+      "categoria": "gratitud",
+      "texto": "Agradece a tu cuerpo: nómbralo en voz alta o por escrito.",
+      "duracionMinutos": 3,
+      "dificultad": "inicial",
+      "intensidad": "suave"
     },
     {
       "id": 9,
-      "pilar": "aceptacion",
-      "texto": "Identifica algo que no puedes cambiar hoy. Practica aceptarlo sin lucha interior.",
-      "autor": "Terapia de Aceptación y Compromiso"
+      "categoria": "gratitud",
+      "texto": "Escribe una carta de agradecimiento a alguien (no hace falta enviarla).",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
     },
     {
       "id": 10,
-      "pilar": "flow",
-      "texto": "Busca una actividad que te haga perder la noción del tiempo. Dedícale 15 minutos.",
-      "autor": "Mihaly Csikszentmihalyi"
+      "categoria": "gratitud",
+      "texto": "Envía un mensaje de gracias a alguien que te ayudó sin esperar nada.",
+      "duracionMinutos": 5,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 11,
+      "categoria": "gratitud",
+      "texto": "Haz un ritual de gratitud al despertar: nombra 1 cosa que esperas con ilusión.",
+      "duracionMinutos": 2,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 12,
+      "categoria": "gratitud",
+      "texto": "Agradece a alguien que te hizo daño. No por lo que hizo, sino por lo que aprendiste.",
+      "duracionMinutos": 8,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 13,
+      "categoria": "conexion",
+      "texto": "Sonríe a 3 desconocidos hoy. Observa cómo responden.",
+      "duracionMinutos": 2,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 14,
+      "categoria": "conexion",
+      "texto": "Llama a un familiar que no hayas contactado en semanas. Pregunta cómo está realmente.",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 15,
+      "categoria": "conexion",
+      "texto": "Escucha a alguien sin interrumpir, sin dar consejos, solo escucha activamente.",
+      "duracionMinutos": 8,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 16,
+      "categoria": "conexion",
+      "texto": "Invita a alguien a tomar café o a caminar. Conecta sin pantallas de por medio.",
+      "duracionMinutos": 30,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 17,
+      "categoria": "conexion",
+      "texto": "Haz un cumplido genuino y específico a alguien hoy.",
+      "duracionMinutos": 2,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 18,
+      "categoria": "conexion",
+      "texto": "Discúlpate sinceramente con alguien a quien heriste, aunque fue sin intención.",
+      "duracionMinutos": 15,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 19,
+      "categoria": "autocuidado",
+      "texto": "Estira cuello y espalda durante 3 minutos. Siente cómo se libera tensión.",
+      "duracionMinutos": 3,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 20,
+      "categoria": "autocuidado",
+      "texto": "Bebe un vaso de agua al despertar. Hidratación consciente.",
+      "duracionMinutos": 1,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 21,
+      "categoria": "autocuidado",
+      "texto": "Duerme 8 horas. Programa alarma para apagar pantallas 1 hora antes.",
+      "duracionMinutos": 480,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 22,
+      "categoria": "autocuidado",
+      "texto": "Haz 10 minutos de ejercicio (saltos, sentadillas, caminar rápido).",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 23,
+      "categoria": "autocuidado",
+      "texto": "Tómate un baño o ducha relajante sin apuro. Disfruta el momento.",
+      "duracionMinutos": 15,
+      "dificultad": "suave",
+      "intensidad": "suave"
+    },
+    {
+      "id": 24,
+      "categoria": "autocuidado",
+      "texto": "Hoy no consumas azúcar procesada ni cafeína después de las 6pm.",
+      "duracionMinutos": 0,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 25,
+      "categoria": "crecimiento",
+      "texto": "Lee 5 páginas de un libro que expanda tu mente.",
+      "duracionMinutos": 10,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 26,
+      "categoria": "crecimiento",
+      "texto": "Aprende una palabra nueva en otro idioma y úsala hoy.",
+      "duracionMinutos": 5,
+      "dificultad": "inicial",
+      "intensidad": "suave"
+    },
+    {
+      "id": 27,
+      "categoria": "crecimiento",
+      "texto": "Escucha un podcast educativo de 15 minutos sobre un tema nuevo.",
+      "duracionMinutos": 15,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 28,
+      "categoria": "crecimiento",
+      "texto": "Escribe 3 ideas que aprendiste hoy. Explica cómo aplicarlas.",
+      "duracionMinutos": 8,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 29,
+      "categoria": "crecimiento",
+      "texto": "Enseña algo que sepas hacer bien a alguien (familiar, amigo, en línea).",
+      "duracionMinutos": 20,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 30,
+      "categoria": "crecimiento",
+      "texto": "Identifica una creencia limitante y reemplázala por una empoderante.",
+      "duracionMinutos": 10,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 31,
+      "categoria": "proposito",
+      "texto": "Escribe una frase de tu 'por qué' personal. Ponla donde la veas hoy.",
+      "duracionMinutos": 5,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 32,
+      "categoria": "proposito",
+      "texto": "Haz algo que beneficie a alguien sin que se entere.",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 33,
+      "categoria": "proposito",
+      "texto": "Define 1 meta para los próximos 30 días. Divide en pasos semanales.",
+      "duracionMinutos": 15,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 34,
+      "categoria": "proposito",
+      "texto": "Dona algo que no uses a alguien que lo necesite.",
+      "duracionMinutos": 12,
+      "dificultad": "moderado",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 35,
+      "categoria": "proposito",
+      "texto": "Escribe tu declaración de misión personal. Revisítala cada mañana esta semana.",
+      "duracionMinutos": 20,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 36,
+      "categoria": "proposito",
+      "texto": "Haz voluntariado por 1 hora (presencial o en línea).",
+      "duracionMinutos": 60,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 37,
+      "categoria": "aceptacion",
+      "texto": "Permite que una emoción incómoda esté presente sin actuar en consecuencia.",
+      "duracionMinutos": 5,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 38,
+      "categoria": "aceptacion",
+      "texto": "Identifica algo que no puedes cambiar hoy. Practica decir 'lo acepto' 3 veces.",
+      "duracionMinutos": 3,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 39,
+      "categoria": "aceptacion",
+      "texto": "Permite que alguien te critique sin defenderte. Solo escucha y agradece.",
+      "duracionMinutos": 6,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 40,
+      "categoria": "aceptacion",
+      "texto": "Hoy no te quejarás de nada. Si algo molesta, pregúntate si puedes cambiarlo.",
+      "duracionMinutos": 0,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 41,
+      "categoria": "aceptacion",
+      "texto": "Perdona a alguien que no te pidió disculpas. El perdón te libera a ti.",
+      "duracionMinutos": 8,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 42,
+      "categoria": "flow",
+      "texto": "Dedica 15 minutos a un hobby olvidado (dibujar, tocar instrumento, jardinería).",
+      "duracionMinutos": 15,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 43,
+      "categoria": "flow",
+      "texto": "Resuelve un acertijo, sudoku o crucigrama. Enfoque total.",
+      "duracionMinutos": 12,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 44,
+      "categoria": "flow",
+      "texto": "Baila una canción completa como si nadie te viera.",
+      "duracionMinutos": 4,
+      "dificultad": "suave",
+      "intensidad": "suave"
+    },
+    {
+      "id": 45,
+      "categoria": "flow",
+      "texto": "Escribe a mano durante 10 minutos (sin borrar, sin juzgar).",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 46,
+      "categoria": "flow",
+      "texto": "Cocina algo nuevo sin receta. Confía en tu intuición.",
+      "duracionMinutos": 30,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 47,
+      "categoria": "flow",
+      "texto": "Termina algo que empezaste y dejaste a medias (limpiar, leer, proyecto).",
+      "duracionMinutos": 25,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 48,
+      "categoria": "reflexion",
+      "texto": "Pregúntate: ¿Qué hábito pequeño cambiaría mi vida si lo hiciera a diario?",
+      "duracionMinutos": 6,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 49,
+      "categoria": "reflexion",
+      "texto": "Escribe tu top 5 de valores. Luego evalúa si vives según ellos.",
+      "duracionMinutos": 10,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 50,
+      "categoria": "reflexion",
+      "texto": "Escribe qué harías si supieras que no puedes fracasar.",
+      "duracionMinutos": 8,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 51,
+      "categoria": "reflexion",
+      "texto": "Revisa tu presupuesto de tiempo: ¿En qué gastas tus horas realmente?",
+      "duracionMinutos": 12,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 52,
+      "categoria": "reflexion",
+      "texto": "Escribe una retrospectiva de tu último mes: aprendido, repetiría, cambiaría.",
+      "duracionMinutos": 15,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 53,
+      "categoria": "digitaldetox",
+      "texto": "Apaga notificaciones no esenciales por 4 horas.",
+      "duracionMinutos": 240,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 54,
+      "categoria": "digitaldetox",
+      "texto": "No uses redes sociales hoy. Reemplaza con conversación real o lectura.",
+      "duracionMinutos": 0,
+      "dificultad": "avanzado",
+      "intensidad": "intenso"
+    },
+    {
+      "id": 55,
+      "categoria": "digitaldetox",
+      "texto": "Deja el celular en otra habitación por 2 horas. Conecta contigo mismo.",
+      "duracionMinutos": 120,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 56,
+      "categoria": "creatividad",
+      "texto": "Dibuja o pinta sin pretensiones. Solo el proceso importa.",
+      "duracionMinutos": 15,
+      "dificultad": "suave",
+      "intensidad": "suave"
+    },
+    {
+      "id": 57,
+      "categoria": "creatividad",
+      "texto": "Escribe un poema de 4 líneas sobre cómo te sientes hoy.",
+      "duracionMinutos": 8,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 58,
+      "categoria": "creatividad",
+      "texto": "Inventa una receta con ingredientes que ya tienes en casa.",
+      "duracionMinutos": 20,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
+    },
+    {
+      "id": 59,
+      "categoria": "naturaleza",
+      "texto": "Pasa 10 minutos al aire libre observando árboles, cielo o nubes.",
+      "duracionMinutos": 10,
+      "dificultad": "suave",
+      "intensidad": "suave"
+    },
+    {
+      "id": 60,
+      "categoria": "naturaleza",
+      "texto": "Camina descalzo sobre pasto o tierra (si es posible) por 5 minutos.",
+      "duracionMinutos": 5,
+      "dificultad": "intermedio",
+      "intensidad": "moderado"
     }
   ]
 }
