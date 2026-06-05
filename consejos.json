@@ -1,0 +1,64 @@
+{
+  "consejos": [
+    {
+      "id": 1,
+      "pilar": "propósito",
+      "texto": "Define una intención para el día de hoy: ¿Qué pequeña acción te acerca a la persona que quieres ser?",
+      "autor": "Viktor Frankl"
+    },
+    {
+      "id": 2,
+      "pilar": "conexión",
+      "texto": "Conecta genuinamente con alguien: pregúntale '¿cómo te sientes realmente?' y escucha sin juzgar.",
+      "autor": "Psicología positiva"
+    },
+    {
+      "id": 3,
+      "pilar": "autocompasión",
+      "texto": "Cuando te equivoques hoy, di en voz alta: 'Está bien, soy humano, puedo aprender de esto'.",
+      "autor": "Kristin Neff"
+    },
+    {
+      "id": 4,
+      "pilar": "crecimiento",
+      "texto": "Aprende algo nuevo en 10 minutos: un dato curioso, una palabra en otro idioma o un acorde de guitarra.",
+      "autor": "Carol Dweck"
+    },
+    {
+      "id": 5,
+      "pilar": "gratitud",
+      "texto": "Escribe tres cosas buenas que te hayan pasado hoy, por pequeñas que sean.",
+      "autor": "Martin Seligman"
+    },
+    {
+      "id": 6,
+      "pilar": "descanso",
+      "texto": "El descanso no es un lujo: tómate 30 minutos sin pantallas, solo para estar contigo mismo.",
+      "autor": "Medicina del sueño"
+    },
+    {
+      "id": 7,
+      "pilar": "reflexión",
+      "texto": "Revisa tu semana: ¿Qué funcionó? ¿Qué ajustarías? Planea una acción para mejorar.",
+      "autor": "James Clear"
+    },
+    {
+      "id": 8,
+      "pilar": "mindfulness",
+      "texto": "Detente un momento. Observa tu respiración. No necesitas cambiarla, solo notarla.",
+      "autor": "Jon Kabat-Zinn"
+    },
+    {
+      "id": 9,
+      "pilar": "aceptacion",
+      "texto": "Identifica algo que no puedes cambiar hoy. Practica aceptarlo sin lucha interior.",
+      "autor": "Terapia de Aceptación y Compromiso"
+    },
+    {
+      "id": 10,
+      "pilar": "flow",
+      "texto": "Busca una actividad que te haga perder la noción del tiempo. Dedícale 15 minutos.",
+      "autor": "Mihaly Csikszentmihalyi"
+    }
+  ]
+}
